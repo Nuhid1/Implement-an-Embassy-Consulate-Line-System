@@ -6,11 +6,11 @@ applications. There are four types of visas offered:
 2. Medical Visa (MED) 
 3. Business Visa (BS) 
 4. Government Officials Visa (GO) 
-Requirements 
+# Requirements 
 ➢ Daily Applicant Limit 
 A maximum of 25 applicants per visa type can receive service daily, making a total of 100 
 applicants per day combing all the visa types. 
-➢ Token Assignment: 
+# ➢ Token Assignment: 
 Tokens are issued sequentially across all categories (e.g., TR-1, BS- 2, MED-3) starting at 1 and 
 incrementing globally, regardless of the Visa category. (See the sample output section named 
 issuing tokens for more details) 
@@ -23,7 +23,7 @@ In the Embassy total 4 counters are available. Counters are primarily designated
 If a counter has less than 25 applicants for its primary visa type on a given day, it can serve applicants 
 from the longest-remaining line of other visa types to optimize the service. 
 Page 1 of 4 
-➢ Calling Customers 
+# ➢ Calling Customers 
 • Customers are served in the order of their tokens, ensuring fairness. 
 • If multiple lines are eligible for serving at a counter, priority is given to the longest line. 
 Day Summary Report (Bonus Task) 
