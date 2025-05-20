@@ -14,7 +14,7 @@ applicants per day combing all the visa types.
 Tokens are issued sequentially across all categories (e.g., TR-1, BS- 2, MED-3) starting at 1 and 
 incrementing globally, regardless of the Visa category. (See the sample output section named 
 issuing tokens for more details) 
-➢ Counter Management 
+# ➢ Counter Management 
 In the Embassy total 4 counters are available. Counters are primarily designated to each visa type: 
 • Counter 1: for TR (Travel Visa) 
 • Counter 2: for MED (Medical) 
