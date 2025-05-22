@@ -64,25 +64,3 @@ Your token is: MED-2
 - Counter 2, Please served token number: MED-2
 
 
----
-
-## ⚠️ Limitations & Improvements
-
-- No file handling or persistent storage  
-- Lacks error handling for invalid data types  
-- Could benefit from modular design and class-based structure  
-- Currently supports only a fixed number of applicants (up to 100 total, 25 per type)
-
----
-
-## 💡 Ideal For
-
-- Beginners learning C++ control structures  
-- Practicing conditional logic and array operations  
-- Simulating real-world queue management systems
-
----
-
-## 📄 License
-
-This project is open-source and free to use for educational purposes.
