@@ -60,8 +60,8 @@ Your token is: MED-2
 
 ...
 
-# Counter 1, Please served token number: TR-1
-# Counter 2, Please served token number: MED-2
+- Counter 1, Please served token number: TR-1
+- Counter 2, Please served token number: MED-2
 
 
 ---
