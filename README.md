@@ -1,34 +1,88 @@
-# Implement-an-Embassy-Consulate-Line-System
-#Problem Scenario and Context 
-You are tasked with designing a solution for an Embassy Consulate Service system that processes visa 
-applications. There are four types of visas offered: 
-1. Travel Visa (TR) 
-2. Medical Visa (MED) 
-3. Business Visa (BS) 
-4. Government Officials Visa (GO) 
-# Requirements 
-➢ Daily Applicant Limit 
-A maximum of 25 applicants per visa type can receive service daily, making a total of 100 
-applicants per day combing all the visa types. 
-# ➢ Token Assignment: 
-Tokens are issued sequentially across all categories (e.g., TR-1, BS- 2, MED-3) starting at 1 and 
-incrementing globally, regardless of the Visa category. (See the sample output section named 
-issuing tokens for more details) 
-# ➢ Counter Management 
-In the Embassy total 4 counters are available. Counters are primarily designated to each visa type: 
-• Counter 1: for TR (Travel Visa) 
-• Counter 2: for MED (Medical) 
-• Counter 3: for BS (Business) 
-• Counter 4: for GO (Government Officials) 
-If a counter has less than 25 applicants for its primary visa type on a given day, it can serve applicants 
-from the longest-remaining line of other visa types to optimize the service. 
-Page 1 of 4 
-# ➢ Calling Customers 
-• Customers are served in the order of their tokens, ensuring fairness. 
-• If multiple lines are eligible for serving at a counter, priority is given to the longest line. 
-Day Summary Report (Bonus Task) 
-A new functionality should be implemented which will generate summary report of the total applicants served 
-by each counter at the end of the day. The summary must include 
-• Total applicants served per visa type. 
-• Applicants served by each counter (primary and reallocated categories). 
-• Number of idle counters of the day (if any).
+# 🛂 Visa Token Management System (C++)
+
+This C++ project implements a token-based queue system for managing visa applicants at a consulate or embassy. The program categorizes tokens by visa types and assigns them to available service counters dynamically based on demand and availability.
+
+---
+
+## 🔧 Features
+
+### 🎫 Token Issuance for 4 Visa Categories:
+- **Travel Visa (TR)**
+- **Medical Visa (MED)**
+- **Business Visa (BS)**
+- **Government Officials Visa (GO)**
+
+### 🪑 Counter Management:
+- Four counters (1–4) serve applicants by their visa category.
+- Each counter prioritizes its designated visa type but dynamically assists others based on load.
+
+### 📊 Daily Summary Report:
+- Total tokens issued per category.
+- Applicants served per counter and category.
+- Identifies idle counters.
+
+---
+
+## 🏗️ Visa Workflow
+
+### Token Request Phase:
+- Users input their visa type.
+- A token like `TR-1`, `MED-2`, etc., is issued.
+- Each category supports up to 25 tokens.
+
+### Service Phase:
+- Each counter calls the next applicant.
+- If its own queue is empty, it serves from other categories based on queue size.
+
+### Summary Report:
+- Displays service breakdown by visa type and counters.
+- Highlights any counters that remained idle.
+
+---
+
+## 📚 Concepts Used
+
+- Arrays and control structures  
+- Loops and conditionals  
+- Dynamic service prioritization  
+- Counters and token management  
+- User input/output management
+
+---
+
+## 🧪 Example Flow
+
+Request token for : 1
+Your token is: TR-1
+
+Request token for : 2
+Your token is: MED-2
+
+...
+
+Counter 1, Please served token number: TR-1
+Counter 2, Please served token number: MED-2
+
+
+---
+
+## ⚠️ Limitations & Improvements
+
+- No file handling or persistent storage  
+- Lacks error handling for invalid data types  
+- Could benefit from modular design and class-based structure  
+- Currently supports only a fixed number of applicants (up to 100 total, 25 per type)
+
+---
+
+## 💡 Ideal For
+
+- Beginners learning C++ control structures  
+- Practicing conditional logic and array operations  
+- Simulating real-world queue management systems
+
+---
+
+## 📄 License
+
+This project is open-source and free to use for educational purposes.
